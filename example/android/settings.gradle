@@ -1,3 +1,5 @@
+
+
 pluginManagement {
     def flutterSdkPath = {
         def properties = new Properties()
@@ -23,3 +25,5 @@ plugins {
 }
 
 include ":app"
+include ':opencv'
+//project(':opencv').projectDir = new File(rootProject.projectDir, 'opencv')

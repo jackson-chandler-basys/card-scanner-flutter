@@ -35,6 +35,12 @@ class CardScanner(
     private var scanCompleted: Boolean = false
 
     init {
+        if (!OpenCVLoader.initLocal()) {
+            Log.e("OpenCV", "OpenCV initialization failed!")
+        } else {
+            Log.d("OpenCV", "OpenCV initialized successfully!")
+        }
+
         if (scannerOptions.cardScannerTimeOut > 0) {
             val timer = object : CountDownTimer((scannerOptions.cardScannerTimeOut * 1000).toLong(), 1000) {
                 override fun onTick(millisUntilFinished: Long) {}
