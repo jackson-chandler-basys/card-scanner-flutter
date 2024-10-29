@@ -1,0 +1,37 @@
+{
+  "buildFiles": [
+    "/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/libcxx_helper/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/jackson.chandler/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/.cxx/Debug/3b6y735f/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/jackson.chandler/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/.cxx/Debug/3b6y735f/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "opencv_jni_shared::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "opencv_jni_shared",
+      "output": "/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/.cxx/Debug/3b6y735f/arm64-v8a/libopencv_jni_shared.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/jackson.chandler/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/jackson.chandler/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,7 +1,9 @@
 package com.basys.card_scanner.scanner_core
 
 import android.annotation.SuppressLint
+import android.graphics.Bitmap
 import android.os.CountDownTimer
+import android.util.Log
 import androidx.annotation.OptIn
 import androidx.camera.core.ExperimentalGetImage
 import androidx.camera.core.ImageAnalysis
@@ -23,6 +25,9 @@ import org.opencv.core.Mat
 import org.opencv.core.Size
 import org.opencv.imgproc.Imgproc
 import org.opencv.core.Core
+import org.opencv.core.Point
+import org.opencv.core.Scalar
+import kotlin.math.min
 
 class CardScanner(
     private val scannerOptions: CardScannerOptions,
@@ -135,8 +140,7 @@ class CardScanner(
 
     return InputImage.fromBitmap(preprocessedBitmap, inputImage.rotationDegrees)
 }
-
-    private fun finish0CardScanning(cardDetails: CardDetails) {
+    private fun finishCardScanning(cardDetails: CardDetails) {
         debugLog("OPTIMAL Card details : $cardDetails", scannerOptions)
         scanCompleted = true
         onCardScanned(cardDetails)

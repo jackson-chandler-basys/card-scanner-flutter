@@ -1,16 +1,22 @@
 package org.opencv.core
-
 import org.opencv.core.Mat.*
 import java.lang.RuntimeException
 
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.get(row: Int, col: Int, data: UByteArray)  = this.get(row, col, data.asByteArray())
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.get(indices: IntArray, data: UByteArray)  = this.get(indices, data.asByteArray())
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.put(row: Int, col: Int, data: UByteArray)  = this.put(row, col, data.asByteArray())
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.put(indices: IntArray, data: UByteArray)  = this.put(indices, data.asByteArray())
-
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.get(row: Int, col: Int, data: UShortArray)  = this.get(row, col, data.asShortArray())
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.get(indices: IntArray, data: UShortArray)  = this.get(indices, data.asShortArray())
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.put(row: Int, col: Int, data: UShortArray)  = this.put(row, col, data.asShortArray())
+@OptIn(ExperimentalUnsignedTypes::class)
 fun Mat.put(indices: IntArray, data: UShortArray)  = this.put(indices, data.asShortArray())
 
 /***
