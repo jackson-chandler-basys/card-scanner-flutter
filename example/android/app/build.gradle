@@ -67,5 +67,5 @@ flutter {
 }
 
 dependencies {
-    implementation project(':opencv')
+    //implementation project('opencv')
 }

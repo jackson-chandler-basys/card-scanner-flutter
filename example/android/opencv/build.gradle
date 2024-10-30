@@ -88,9 +88,16 @@
 //   }
 //
 
-apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
-apply plugin: 'kotlin-android'
+//apply plugin: 'com.android.library'
+//apply plugin: 'maven-publish'
+//apply plugin: 'kotlin-android'
+plugins {
+    //id 'org.jetbrains.compose' version '1.5.3' // Use a compatible Compose version for Kotlin
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'kotlin-android'
+    id("org.jetbrains.kotlin.plugin.compose") version '2.0.0'
+}
 
 def openCVersionName = "4.10.0"
 def openCVersionCode = ((4 * 100 + 10) * 100 + 0) * 10 + 0
@@ -121,6 +128,10 @@ android {
         targetCompatibility JavaVersion.VERSION_21
     }
 
+//    composeOptions {
+//        kotlinCompilerExtensionVersion '1.5.4'
+//    }
+
     kotlinOptions {
         jvmTarget = "21"
     }
@@ -143,6 +154,10 @@ android {
     buildFeatures {
         prefabPublishing true
         buildConfig true
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.5.3' // or your compatible Compose version
     }
     prefab {
         opencv_jni_shared {
@@ -194,4 +209,5 @@ publishing {
 }
 
 dependencies {
+    implementation "androidx.compose.runtime:runtime:1.5.3" // Compose runtime dependency
 }

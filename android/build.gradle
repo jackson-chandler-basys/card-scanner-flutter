@@ -59,5 +59,5 @@ dependencies {
     // CameraX View class
     implementation "androidx.camera:camera-view:1.3.4"
     implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation project(':opencv')
+    implementation project('/android/opencv')
 }

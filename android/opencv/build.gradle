@@ -88,9 +88,16 @@
 //   }
 //
 
-apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
-apply plugin: 'kotlin-android'
+
+plugins {
+    //id 'org.jetbrains.compose' version '1.5.3' // Use a compatible Compose version for Kotlin
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'kotlin-android'
+    id("org.jetbrains.kotlin.plugin.compose") version '2.0.0'
+}
+
+buildDir = "$rootDir/custom-build-output/opencv"
 
 def openCVersionName = "4.10.0"
 def openCVersionCode = ((4 * 100 + 10) * 100 + 0) * 10 + 0
@@ -139,6 +146,7 @@ android {
     buildFeatures {
         prefabPublishing true
         buildConfig true
+        compose true
     }
     prefab {
         opencv_jni_shared {
@@ -190,4 +198,5 @@ publishing {
 }
 
 dependencies {
+    implementation "androidx.compose.runtime:runtime:1.5.3"
 }

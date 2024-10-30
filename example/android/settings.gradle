@@ -25,5 +25,5 @@ plugins {
 }
 
 include ":app"
-include ':opencv'
-//project(':opencv').projectDir = new File(rootProject.projectDir, 'opencv')
+//include ':opencv'
+//project(':opencv').projectDir = new File('opencv')

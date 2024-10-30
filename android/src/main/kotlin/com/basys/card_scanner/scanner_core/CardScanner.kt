@@ -18,16 +18,16 @@ import com.basys.card_scanner.onCardScanned
 import com.basys.card_scanner.scanner_core.models.CardDetails
 import com.basys.card_scanner.scanner_core.models.CardScannerOptions
 import com.basys.card_scanner.scanner_core.optimizer.CardDetailsScanOptimizer
-import org.opencv.android.OpenCVLoader
 import org.opencv.android.Utils
-import org.opencv.core.CvType
-import org.opencv.core.Mat
-import org.opencv.core.Size
-import org.opencv.imgproc.Imgproc
-import org.opencv.core.Core
-import org.opencv.core.Point
-import org.opencv.core.Scalar
-import kotlin.math.min
+//import org.opencv.android.OpenCVLoader
+//import org.opencv.core.CvType
+//import org.opencv.core.Mat
+//import org.opencv.core.Size
+//import org.opencv.imgproc.Imgproc
+//import org.opencv.core.Core
+//import org.opencv.core.Point
+//import org.opencv.core.Scalar
+//import kotlin.math.min
 
 class CardScanner(
     private val scannerOptions: CardScannerOptions,
