@@ -1,0 +1,1 @@
+/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/build/opencv/intermediates/cxx/Debug/3b6y735f/obj/armeabi-v7a

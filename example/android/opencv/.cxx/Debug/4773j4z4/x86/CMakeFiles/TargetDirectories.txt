@@ -1,0 +1,3 @@
+/Users/chris.brownbasyspro.com/Projects/card-scanner-flutter/example/android/opencv/.cxx/Debug/4773j4z4/x86/CMakeFiles/opencv_jni_shared.dir
+/Users/chris.brownbasyspro.com/Projects/card-scanner-flutter/example/android/opencv/.cxx/Debug/4773j4z4/x86/CMakeFiles/edit_cache.dir
+/Users/chris.brownbasyspro.com/Projects/card-scanner-flutter/example/android/opencv/.cxx/Debug/4773j4z4/x86/CMakeFiles/rebuild_cache.dir

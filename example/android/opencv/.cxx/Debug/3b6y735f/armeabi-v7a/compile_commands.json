@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/.cxx/Debug/3b6y735f/armeabi-v7a",
+  "command": "/Users/jackson.chandler/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --sysroot=/Users/jackson.chandler/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles/opencv_jni_shared.dir/dummy.cpp.o -c /Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/libcxx_helper/dummy.cpp",
+  "file": "/Users/jackson.chandler/Documents/Projects.nosync/card-scanner-flutter/example/android/opencv/libcxx_helper/dummy.cpp"
+}
+]
