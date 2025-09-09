@@ -1,6 +1,11 @@
 # Changelog after fork
 
+## 0.0.4
+
+- Revert compileSdk to 34
+
 ## 0.0.5
+
 - Upgraded packages
 - Verified Android 16KB support
 
