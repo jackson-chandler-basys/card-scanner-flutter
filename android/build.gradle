@@ -16,7 +16,7 @@ android {
         namespace = "com.basys.card_scanner"
     }
 
-    compileSdk = 34
+    compileSdk = 36
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
